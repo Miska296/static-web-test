@@ -1,3 +1,12 @@
+# Static Web Test
+Tento projekt vznikl jako základní testovací web pro následné nasazení pomocí Ansible. Obsahuje jednoduchou HTML/CSS strukturu, která byla použita pro ověření funkčnosti automatizovaného nasazení.
+
+## Technologie
+- HTML
+- CSS
+- Remplit
+- Ansible (v navazujícím projektu)
+
 # Projekt: Ansible Web Server Setup
 Tento projekt automatizuje konfiguraci Linuxového serveru (Ubuntu 22.04) pomocí Ansible. Cílem je vytvořit jednoduchou webovou službu (NGINX) a nastavit ji bezpečně pro provoz.
 
@@ -111,7 +120,13 @@ Projekt testován lokálně v Replitu:
 - Validace pomocí HTTP testu
 Pro reálné nasazení doporučuji Linux VM s Ubuntu 22.04 (např. Hetzner, Oracle Cloud, VirtualBox).
 
+## Jak přispět
+Ráda uvítám návrhy na vylepšení nebo rozšíření projektu. Můžete otevřít issue nebo pull request.
+
 ## Autor
 Projekt připravila: Michaela Kučerová 
 Verze: 1.0 
 Datum: červenec 2025
+
+## Licence
+Tento projekt je dostupný pod licencí MIT. Viz soubor [LICENSE](https://github.com/Miska296/static-web-test/blob/main/LICENSE).
