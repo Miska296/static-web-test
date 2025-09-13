@@ -123,10 +123,12 @@ Pro reálné nasazení doporučuji Linux VM s Ubuntu 22.04 (např. Hetzner, Orac
 ## Jak přispět
 Ráda uvítám návrhy na vylepšení nebo rozšíření projektu. Můžete otevřít issue nebo pull request.
 
-## Autor
-Projekt připravila: Michaela Kučerová 
-Verze: 1.0 
+---
+## 16. Autor
+Projekt vypracovala [Michaela Kučerová](https://github.com/Miska296)  
+Verze: 1.0  
 Datum: červenec 2025
 
-## Licence
-Tento projekt je dostupný pod licencí MIT. Viz soubor [LICENSE](https://github.com/Miska296/static-web-test/blob/main/LICENSE).
+---
+## 17. Licence
+Tento projekt je dostupný pod licencí MIT. Podrobnosti viz soubor [LICENSE](LICENSE).
