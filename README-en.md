@@ -101,55 +101,55 @@ ansible-playbook -i inventory/hosts.ini playbooks/webserver.yml
 - Changes in `sshd_config` automatically trigger a restart of the service.
 
 ---
-## Aktualizace a ochrana
-- Automatické bezpečnostní aktualizace pomocí `unattended-upgrades`
-- Konfigurace přes soubor `20auto-upgrades`
-- Nainstalován a spuštěn `fail2ban` pro ochranu proti `brute-force` útokům
-- Služba `fail2ban` chrání SSH přístup
+## Update and protection
+- Automatic security updates using `unattended-upgrades`
+- Configuration via the `20auto-upgrades` file
+- Installed and run `fail2ban` for protection against `brute-force` attacks.
+- The `fail2ban` service protects SSH access.
 
 ---
-## Validace funkčnosti
-- Na konci playbooku je proveden HTTP test pomocí modulu `uri`
-- Ověřuje se, že server odpovídá s kódem `200 OK`
-- Kontroluje se, že odpověď obsahuje očekávaný text (např. „Hello from GitHub!“)
-- V případě chyby se playbook ukončí s hlášením
+## Functionality validation
+- At the end of the playbook, an HTTP test is performed using the `uri` module.
+- It is being verified that the server responds with the code `200 OK`.
+- It is checked that the response contains the expected text (for example, "Hello from GitHub!")
+- In case of an error, the playbook will terminate with a message.
 
 ---
-## Citlivé proměnné s Ansible Vault (simulace)
-- Projekt umožňuje bezpečné uchování citlivých hodnot pomocí `ansible-vault`.
-Příklady dat:
-- SSH klíče (`ssh_private_key`)
-- Hesla (`db_password`, `api_token`)
-Vytvoření šifrovaného souboru (simulace):
+## Sensitive variables with Ansible Vault (simulation)
+- The project allows for the secure storage of sensitive values using `ansible-vault`.
+Examples of data:
+- SSH keys (`ssh_private_key` )
+- Credentials (`db_password`, `api_token`)
+Creation of an encrypted file (simulation):
   ```bash
   ansible-vault create group_vars/web_secrets.yml
   ```
-V Replitu se složka `/opt/static-sites` nevytváří automaticky — Ansible ji vytvoří při reálném nasazení.
+In Replit, the folder `/opt/static-sites` is not created automatically — Ansible will create it during the actual deployment.
 
 ---
-## Bonusové body
-- Simulované uložení citlivých dat pomocí `ansible-vault` v šifrovaném souboru `web_secrets.yml`
-- Webový obsah stažen z GitHub repozitáře pomocí modulu `git`
-- Projekt využívá bezpečnostní prvky, automatizaci i monitoring
+## Bonus points
+- Simulated storage of sensitive data using `ansible-vault` in the encrypted file `web_secrets.yml`
+- Web content downloaded from the GitHub repository using the `git` module
+- The project utilizes security features, automation, and monitoring
 
 ---
-## Testování a doporučení
-Projekt testován lokálně v Replitu:
-- Ověřena syntaxe playbooku
-- Načtení inventáře a proměnných
-- Validace pomocí HTTP testu
-Pro reálné nasazení doporučuji Linux VM s Ubuntu 22.04 (např. Hetzner, Oracle Cloud, VirtualBox).
+## Testing and recommendations
+Project tested locally in Replit:
+- Validated playbook syntax
+- Loading inventory and variables
+- Validation using HTTP test
+For real deployment, I recommend a Linux VM with Ubuntu 22.04 (e.g. Hetzner, Oracle Cloud, VirtualBox).
 
 ---
-## Jak přispět
-Ráda uvítám návrhy na vylepšení nebo rozšíření projektu. Můžete otevřít `issue` nebo `pull request`.
+## How to contribute
+I would welcome suggestions for improving or expanding the project. You can open an `issue` or a `pull request`.
 
 ---
-## Autor
-Projekt vypracovala [Michaela Kučerová](https://github.com/Miska296)  
-Verze: 1.0  
-Datum: červenec 2025
+## Author
+The project was prepared by [Michaela Kučerová](https://github.com/Miska296)  
+Version: 1.0  
+Date: July 2025
 
 ---
-## Licence
-Tento projekt je dostupný pod licencí MIT. Podrobnosti viz soubor [LICENSE](LICENSE).
+## License
+This project is available under the MIT license. See the file for details [LICENSE](LICENSE).
