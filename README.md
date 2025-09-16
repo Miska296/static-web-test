@@ -1,5 +1,6 @@
 # Static Web Test
 Tento projekt vznikl jako základní testovací web pro následné nasazení pomocí Ansible. Obsahuje jednoduchou HTML/CSS strukturu, která byla použita pro ověření funkčnosti automatizovaného nasazení.
+> Tento projekt je dostupný také v anglické verzi: [README-en.md](README-en.md)
 
 ---
 ## Technologie
