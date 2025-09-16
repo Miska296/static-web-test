@@ -24,6 +24,7 @@ Tento projekt automatizuje konfiguraci Linuxového serveru (Ubuntu 22.04) pomoc�
 
 ---
 ## Struktura projektu
+kořenová složka `static-web-test/`:
 - inventory/hosts.ini 
 - group_vars/web.yml
 - group_vars/web_secrets.yml (simulace citlivých dat)
@@ -40,6 +41,8 @@ Tento projekt automatizuje konfiguraci Linuxového serveru (Ubuntu 22.04) pomoc�
 - roles/updates/tasks/main.yml
 - roles/updates/handlers/main.yml
 - README.md
+- README-en.md
+- LICENSE
 
 ---
 ## Spuštění projektu
